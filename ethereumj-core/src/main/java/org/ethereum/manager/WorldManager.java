@@ -119,6 +119,10 @@ public class WorldManager {
         return channelManager;
     }
 
+    public ChannelManager getChannelManager() {
+        return channelManager;
+    }
+
     public EthereumListener getListener() {
         return listener;
     }
