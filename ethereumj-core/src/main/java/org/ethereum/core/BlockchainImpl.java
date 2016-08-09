@@ -569,6 +569,7 @@ public class BlockchainImpl implements Blockchain, org.ethereum.facade.Blockchai
 
         track.commit();
         updateTotalDifficulty(block);
+        summary.setTotalDifficulty(getTotalDifficulty());
 
         storeBlock(block, receipts);
 
