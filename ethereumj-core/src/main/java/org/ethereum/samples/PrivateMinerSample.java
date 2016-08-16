@@ -3,7 +3,6 @@ package org.ethereum.samples;
 import com.typesafe.config.ConfigFactory;
 import org.ethereum.config.SystemProperties;
 import org.ethereum.core.Block;
-import org.ethereum.core.Transaction;
 import org.ethereum.crypto.ECKey;
 import org.ethereum.facade.EthereumFactory;
 import org.ethereum.mine.Ethash;
