@@ -578,6 +578,7 @@ public class BlockchainImpl implements Blockchain, org.ethereum.facade.Blockchai
         return summary;
     }
 
+    @Override
     public void flush() {
         repository.flush();
         blockStore.flush();
