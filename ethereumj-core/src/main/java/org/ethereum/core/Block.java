@@ -46,6 +46,8 @@ public class Block {
 
     private Trie txsState;
 
+    private BigInteger totalDifficulty;
+
 
     /* Constructors */
 
@@ -450,6 +452,14 @@ public class Block {
         return "#" + getNumber() + " (" + Hex.toHexString(getHash()).substring(0,6) + " <~ "
                 + Hex.toHexString(getParentHash()).substring(0,6) + ") Txs:" + getTransactionsList().size() +
                 ", Unc: " + getUncleList().size();
+    }
+
+    public BigInteger getTotalDifficulty() {
+        return this.totalDifficulty;
+    }
+
+    public void setTotalDifficulty(BigInteger difficulty) {
+        this.totalDifficulty = difficulty;
     }
 
     public static class Builder {
