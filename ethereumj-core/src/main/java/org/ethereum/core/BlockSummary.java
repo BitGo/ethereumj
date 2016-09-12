@@ -198,4 +198,12 @@ public class BlockSummary {
             }
         });
     }
+
+    public void setTotalDifficulty(BigInteger totalDifficulty) {
+        this.totalDifficulty = totalDifficulty;
+    }
+
+    public BigInteger getTotalDifficulty() {
+        return totalDifficulty;
+    }
 }
